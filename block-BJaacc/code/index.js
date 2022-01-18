@@ -38,8 +38,24 @@ console.log(student["42"]);
 
 // 10. Check the length of object named `students`.
 
+student["student"];
+
 // 11. Can you define a key of `let or var` in any object? Reason.
+
+``
+`js 
+
+Yes, we can define a key of let or var because whenever we define anything use these keywords then these keywords when used in place of key values, it become string data type.
+`
+``
 
 // 12. Delete the `isAdult` property from the object `students`. Also, print the object before or after deleting the property
 
+console.log(student["isAdult"]);
+delete["isAdult"];
+console.log(student["isAdult"]);
+
 // 13. Update the value of the key batch in the object `students` and print it using `console.log`
+
+students.batch = 7;
+console.log(student.batch);
