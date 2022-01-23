@@ -4,9 +4,70 @@ let userIds = [1230, 234, 1278, 984, 763, 900];
 
 // 1. Add all the values of numbers and userIds array into the new newly created array named `collection`
 
+let collection = [];
+
+let sum = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+}
+collection.push(sum);
+
+let sumOfUserIds = 0;
+
+for (let i = 0; i < userIds.length; i++) {
+    sumOfUserIds += userIds[i];
+}
+collection.push(sumOfUserIds);
+
+console.log(collection);
+
 // 2. Add all the even numbers from both arrays numbers and userIds into a newly created array named `evenCollection`
 
+let evenCollection = [];
+
+let evenSum = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+        evenSum += numbers[i];
+    }
+}
+evenCollection.push(evenSum);
+
+let evenSum2 = 0;
+
+for (let i = 0; i < userIds.length; i++) {
+    if (userIds[i] % 2 === 0) {
+        evenSum2 += userIds[i];
+    }
+}
+evenCollection.push(evenSum2);
+
+
+
 // 3. Add all the odd numbers from both arrays numbers and userIds into a newly created array named `oddCollection`
+
+let oddCollection = [];
+
+let oddSum = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 !== 0) {
+        oddSum += numbers[i];
+    }
+}
+oddCollection.push(oddSum);
+
+let oddSum2 = 0;
+
+for (let i = 0; i < userIds.length; i++) {
+    if (userIds[i] % 2 !== 0) {
+        oddSum2 += userIds[i];
+    }
+}
+oddCollection.push(oddSum2);
+
 
 /*
   @param means parameter
@@ -24,12 +85,16 @@ let userIds = [1230, 234, 1278, 984, 763, 900];
     times(5); // ['test', 'test', 'test', 'test', 'test']
 */
 
-function times() {
-  // Your code
+let emptyArray = []
+
+function times(number, string) {
+    if (number = number) {
+        return
+    }
 }
 
-// Uncomment the code below and test the output
 
+// Uncomment the code below and test the output
 // console.log(times(5, 'c')); // ['c', 'c', 'c', 'c', 'c']
 // console.log(times(2, 'a')); // ['a', 'a']
 // console.log(times(0)); // []
@@ -49,7 +114,7 @@ function times() {
 */
 
 function revert() {
-  // your code
+    // your code
 }
 
 // Uncomment the code below and test the output
@@ -71,7 +136,7 @@ function revert() {
 */
 
 function clear() {
-  // your code
+    // your code
 }
 
 // Uncomment the code below and test the output
@@ -94,7 +159,7 @@ function clear() {
 */
 
 function arrayToObj() {
-  // your code
+    // your code
 }
 
 // Uncomment the code below and test the output
