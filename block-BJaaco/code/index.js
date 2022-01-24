@@ -4,21 +4,33 @@ let userIds = [1230, 234, 1278, 984, 763, 900];
 
 // 1. Add all the values of numbers and userIds array into the new newly created array named `collection`
 
+// let collection = [];
+
+// let sum = 0;
+
+// for (let i = 0; i < numbers.length; i++) {
+//     sum += numbers[i];
+// }
+// collection.push(sum);
+
+// let sumOfUserIds = 0;
+
+// for (let i = 0; i < userIds.length; i++) {
+//     sumOfUserIds += userIds[i];
+// }
+// collection.push(sumOfUserIds);
+
+// console.log(collection);
+
 let collection = [];
 
-let sum = 0;
-
-for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
+for (let number of numbers) {
+    collection.push(number);
 }
-collection.push(sum);
 
-let sumOfUserIds = 0;
-
-for (let i = 0; i < userIds.length; i++) {
-    sumOfUserIds += userIds[i];
+for (let user of userIds) {
+    collection.push(user);
 }
-collection.push(sumOfUserIds);
 
 console.log(collection);
 
@@ -26,48 +38,37 @@ console.log(collection);
 
 let evenCollection = [];
 
-let evenSum = 0;
-
-for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 0) {
-        evenSum += numbers[i];
+for (let number of numbers) {
+    if (number % 2 === 0) {
+        evenCollection.push(number);
     }
 }
-evenCollection.push(evenSum);
 
-let evenSum2 = 0;
-
-for (let i = 0; i < userIds.length; i++) {
-    if (userIds[i] % 2 === 0) {
-        evenSum2 += userIds[i];
+for (let user of userIds) {
+    if (user % 2 === 0) {
+        evenCollection.push(user);
     }
 }
-evenCollection.push(evenSum2);
 
-
+console.log(evenCollection);
 
 // 3. Add all the odd numbers from both arrays numbers and userIds into a newly created array named `oddCollection`
 
 let oddCollection = [];
 
-let oddSum = 0;
-
-for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 !== 0) {
-        oddSum += numbers[i];
+for (let number of numbers) {
+    if (number % 2 !== 0) {
+        oddCollection.push(number);
     }
 }
-oddCollection.push(oddSum);
 
-let oddSum2 = 0;
-
-for (let i = 0; i < userIds.length; i++) {
-    if (userIds[i] % 2 !== 0) {
-        oddSum2 += userIds[i];
+for (let user of userIds) {
+    if (user % 2 !== 0) {
+        oddCollection.push(user);
     }
 }
-oddCollection.push(oddSum2);
 
+console.log(oddCollection);
 
 /*
   @param means parameter
@@ -85,14 +86,18 @@ oddCollection.push(oddSum2);
     times(5); // ['test', 'test', 'test', 'test', 'test']
 */
 
-let emptyArray = []
 
-function times(number, string) {
-    if (number = number) {
-        return
+
+function times(number, stringg = "test") {
+    if (number < 1) return [];
+    let emptyArray = [];
+    for (let i = 0; i < number; i++) {
+        emptyArray.push(stringg);
     }
+    return emptyArray;
 }
 
+times(5, "Vikas");
 
 // Uncomment the code below and test the output
 // console.log(times(5, 'c')); // ['c', 'c', 'c', 'c', 'c']
@@ -113,8 +118,12 @@ function times(number, string) {
     revert(['Ryan', 'John', 'Bran']); //['Bran', 'John', 'Ryan']
 */
 
-function revert() {
-    // your code
+function revert(array) {
+    let final = [];
+    for (let i = array.length - 1; i >= 0; i--) {
+        final.push(array[i]);
+    }
+    return final;
 }
 
 // Uncomment the code below and test the output
