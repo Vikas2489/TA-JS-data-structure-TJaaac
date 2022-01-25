@@ -1,4 +1,4 @@
-1. Write the output with reason
+1. Write the  with reason
 
 ```js
 const person = {
@@ -10,15 +10,15 @@ let person2 = person;
 
 person.firstName = 'Arya';
 
-console.log(person2.firstName); // output
-console.log(person.firstName); // output
-console.log(person.lastName); // output
-console.log(person == person2); // output
-console.log(person === person2); // output
-console.log(person.lastName === person2.lastName); // output
+console.log(person2.firstName); // "Arya"
+console.log(person.firstName); // "Arya"
+console.log(person.lastName); // "Doe"
+console.log(person == person2); // true
+console.log(person === person2); // true
+console.log(person.lastName === person2.lastName); // true
 ```
 
-2. Write the output with reason:
+2. Write the  with reason:
 
 ```js
 let person = {
@@ -37,20 +37,20 @@ let personTwo = { ...person };
 person.firstName = 'Arya';
 person.city = 'Navada';
 
-console.log(personTwo.firstName); // output
-console.log(person.firstName); // output
-console.log(personTwo.lastName); // output
-console.log(person.firstName === personTwo.firstName); // output
-console.log(person == personTwo); // output
-console.log(person === personTwo); // output
-console.log(person.address === personTwo.address); // output
-console.log(person.address == personTwo.address); // output
-console.log(personTwo.address.city); // output
-console.log(person.address.city); // output
-console.log(person.address.city == personTwo.address.city); // output
+console.log(personTwo.firstName); // "John"
+console.log(person.firstName); // "Arya"
+console.log(personTwo.lastName); // "Doe"
+console.log(person.firstName === personTwo.firstName); // false
+console.log(person == personTwo); // false
+console.log(person === personTwo); // false
+console.log(person.address === personTwo.address); // true
+console.log(person.address == personTwo.address); // true
+console.log(personTwo.address.city); // "San Jose"
+console.log(person.address.city); // "San Jose"
+console.log(person.address.city == personTwo.address.city); // true
 ```
 
-3. Write the output with reason:
+3. Write the  with reason:
 
 ```js
 let person = {
@@ -69,17 +69,17 @@ let personTwo = { ...person, address: { ...person.address } };
 person.firstName = 'Arya';
 person.city = 'Navada';
 
-console.log(personTwo.firstName); // output
-console.log(person.firstName); // output
-console.log(personTwo.lastName); // output
-console.log(person.firstName === personTwo.firstName); // output
-console.log(person == personTwo); // output
-console.log(person === personTwo); // output
-console.log(person.address === personTwo.address); // output
-console.log(person.address == personTwo.address); // output
-console.log(personTwo.address.city); // output
-console.log(person.address.city); // output
-console.log(person.address.city == personTwo.address.city); // output
+console.log(personTwo.firstName); // 'John' 
+console.log(person.firstName); // "Arya"
+console.log(personTwo.lastName); // "Doe
+console.log(person.firstName === personTwo.firstName); // false
+console.log(person == personTwo); // false
+console.log(person === personTwo); // false
+console.log(person.address === personTwo.address); // false
+console.log(person.address == personTwo.address); //  false
+console.log(personTwo.address.city); // "San Jose"
+console.log(person.address.city); //  "San Jose"
+console.log(person.address.city == personTwo.address.city); //  false
 ```
 
 4. Clone the `blogs` variable into a new variable named `clonedBlogs`
@@ -164,22 +164,22 @@ var allBlogs = {
 let person = [
   {
     input: { name: 'Ryan' },
-    output: { name: 'Ryan' },
+    : { name: 'Ryan' },
   },
   {
     input: { name: { first: 'Ryan', last: 'Haskell-Glatz' } },
-    output: { firstName: 'Ryan', lastName: 'Haskell-Glatz' },
+    : { firstName: 'Ryan', lastName: 'Haskell-Glatz' },
   },
   {
     input: { name: 'Ryan', age: 24 },
-    output: { name: 'Ryan', age: 24 },
+    : { name: 'Ryan', age: 24 },
   },
   {
     input: {
       name: { first: 'Ryan', last: 'Haskell-Glatz' },
       birthday: { year: 1993, month: 'Nov' },
     },
-    output: {
+    : {
       firstName: 'Ryan',
       lastName: 'Haskell-Glatz',
       birthdayYear: 1993,
